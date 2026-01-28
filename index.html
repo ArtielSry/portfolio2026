@@ -1,451 +1,953 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Título de la página (aparece en Google y pestañas del navegador) -->
-    <title>Artiel Studio | Web Design & Development</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta descripción (importante para SEO y aparece en resultados de Google) -->
-    <meta
-      name="description"
-      content="Bienvenido a mi sitio web. Aquí encontrarás información sobre mis servicios, proyectos y cómo contactarme. ¡Visítanos ahora!"
-    />
+  <!-- Título de la página (aparece en Google y pestañas del navegador) -->
+  <title>Artiel Studio | Web Design & Development</title>
 
-    <!-- Palabras clave (ya no son tan importantes, pero no hacen daño) -->
-    <meta
-      name="keywords"
-      content="sitio web, portfolio, servicios, desarrollo web, diseño, contacto"
-    />
+  <!-- Meta descripción (importante para SEO y aparece en resultados de Google) -->
+  <meta name="description"
+    content="Bienvenido a mi sitio web. Aquí encontrarás información sobre mis servicios, proyectos y cómo contactarme. ¡Visítanos ahora!" />
 
-    <!-- Autor del sitio -->
-    <meta name="author" content="Tu Nombre o Marca" />
+  <!-- Palabras clave (ya no son tan importantes, pero no hacen daño) -->
+  <meta name="keywords" content="sitio web, portfolio, servicios, desarrollo web, diseño, contacto" />
 
-    <!-- Robots (permite a Google indexar la página) -->
-    <meta name="robots" content="index, follow" />
+  <!-- Autor del sitio -->
+  <meta name="author" content="Tu Nombre o Marca" />
 
-    <!-- Open Graph para compartir en redes sociales -->
-    <meta property="og:title" content="Mi Sitio Web Profesional" />
-    <meta
-      property="og:description"
-      content="Descubre mis proyectos y servicios. Desarrollo web profesional a tu alcance."
-    />
-    <meta property="og:image" content="https://tudominio.com/imagen.jpg" />
-    <meta property="og:url" content="https://tudominio.com" />
-    <meta property="og:type" content="website" />
+  <!-- Robots (permite a Google indexar la página) -->
+  <meta name="robots" content="index, follow" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/favicon-art.svg" type="image/svg+xml" />
+  <!-- Open Graph para compartir en redes sociales -->
+  <meta property="og:title" content="Mi Sitio Web Profesional" />
+  <meta property="og:description"
+    content="Descubre mis proyectos y servicios. Desarrollo web profesional a tu alcance." />
+  <meta property="og:image" content="https://tudominio.com/imagen.jpg" />
+  <meta property="og:url" content="https://tudominio.com" />
+  <meta property="og:type" content="website" />
 
-    <!--  external -->
-    <script defer src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script
-      defer
-      src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"
-    ></script>
-    <script
-      defer
-      src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"
-    ></script>
-    <!-- Enlace al CSS -->
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="style/styles.css" />
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon-art.svg" type="image/svg+xml" />
 
-  <body>
-    <section id="splash-artielstudio">
-      <div class="splash-container-artielstudio">
-        <div class="splash-column-container-artielstudio">
-          <div class="splash-subcontainer-artielstudio">
-            <div class="icon-artiel">
-              <img src="./assets/artiel.svg" alt="artiel name" />
-            </div>
-            <div class="container-artielstudio-logo-splash-video">
-              <video
-                src="./assets/artielstudio-animation.webm"
-                loop
-                muted
-                autoplay
-                preload="metadata"
-                class="artielstudio-logo-splash-video"
-              ></video>
-            </div>
-            <div class="icon-studio">
-              <img src="./assets/studio.svg" alt="studio name" />
-            </div>
+  <!--  external -->
+  <script defer src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script defer src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+  <!-- Enlace al CSS -->
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+
+<body>
+  <section id="splash-artielstudio">
+    <div class="splash-container-artielstudio">
+      <div class="splash-column-container-artielstudio">
+        <div class="splash-subcontainer-artielstudio">
+          <div class="icon-artiel">
+            <img src="./assets/artiel.svg" alt="artiel name" />
           </div>
-          <div class="splash-loading-artielstudio">
-            <span id="loading-artielstudio">0%</span>
+          <div class="container-artielstudio-logo-splash-video">
+            <video src="./assets/artielstudio-animation.webm" loop muted autoplay preload="metadata"
+              class="artielstudio-logo-splash-video"></video>
+          </div>
+          <div class="icon-studio">
+            <img src="./assets/studio.svg" alt="studio name" />
+          </div>
+        </div>
+        <div class="splash-loading-artielstudio">
+          <span id="loading-artielstudio">0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main class="main-art">
+    <header class="header-art">
+      <img src="./assets/artiel-studio.svg" alt="astirl.studio logo written" />
+    </header>
+
+    <section class="intro-art">
+      <div class="container-h1-title">
+        <h1>Independent <span class="designer-art">Designer</span></h1>
+        <div class="container-impact webm-responsive" id="impact-video">
+          <img src="./assets/impact-svg/impact-svg-1.svg" class="impact-frame" style="display: block" />
+          <img src="./assets/impact-svg/impact-svg-2.svg" class="impact-frame" style="display: none" />
+          <img src="./assets/impact-svg/impact-svg-3.svg" class="impact-frame" style="display: none" />
+          <img src="./assets/impact-svg/impact-svg-4.svg" class="impact-frame" style="display: none" />
+          <img src="./assets/impact-svg/impact-svg-5.svg" class="impact-frame" style="display: none" />
+          <img src="./assets/impact-svg/impact-svg-6.svg" class="impact-frame" style="display: none" />
+        </div>
+      </div>
+
+      <div class="container-h2-title">
+        <h2>
+          for
+          <span class="creative-art">creative</span>
+          <span class="brand-art">brands</span>
+        </h2>
+        <div id="signal-video" class="container-signal webm-responsive">
+          <img src="./assets/exclamation-svg/exclamation-svg-1.svg" class="impact-frame exclamation-icon-art"
+            style="display: block" />
+          <img src="./assets/exclamation-svg/exclamation-svg-2.svg" class="impact-frame exclamation-icon-art"
+            style="display: none" />
+          <img src="./assets/exclamation-svg/exclamation-svg-3.svg" class="impact-frame exclamation-icon-art"
+            style="display: none" />
+          <img src="./assets/exclamation-svg/exclamation-svg-4.svg" class="impact-frame exclamation-icon-art"
+            style="display: none" />
+        </div>
+      </div>
+      <div id="original-video" class="container-original webm-responsive">
+        <img src="./assets/original-svg/original-svg-1.svg" class="impact-frame original-animation-art"
+          style="display: block" />
+        <img src="./assets/original-svg/original-svg-2.svg" class="impact-frame original-animation-art"
+          style="display: none" />
+        <img src="./assets/original-svg/original-svg-3.svg" class="impact-frame original-animation-art"
+          style="display: none" />
+        <img src="./assets/original-svg/original-svg-4.svg" class="impact-frame original-animation-art"
+          style="display: none" />
+      </div>
+      <div class="container-intro">
+        <div class="intro-details">
+          <span class="intro-fullname">Soraya Artiel</span>
+          <span class="intro-location">Based in Spain</span>
+        </div>
+        <div class="intro-about-details">
+          <div class="intro-about-details-first">
+            <p>
+              For new projects:
+              <a href="mailto:artielsoraya@gmail.com">artielsoraya@gmail.com
+              </a>
+            </p>
+            <p>
+              Freelance Web Designer & Developer who combines design, code and
+              artistic sensibility to create precise, carefully crafted and
+              intentional digital experiences. Passionate about art in all its
+              forms and always learning, I collaborate with brands and
+              projects that value detail, aesthetics, and functionality in
+              equal measure.
+            </p>
+          </div>
+
+          <div class="intro-about-details-third">
+            <ul>
+              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>App Design</li>
+              <li>Front-End Development</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <main class="main-art">
-      <header class="header-art">
-        <img
-          src="./assets/artiel-studio.svg"
-          alt="astirl.studio logo written"
-        />
-      </header>
+    <div class="section-profile-picture">
+      <div class="bg">
+        <img class="index-profile-picture" src="./assets/testpic.png" />
+        <img class="index-profile-picture-responsive" src="./assets/artiel-soraya-web-designer-responsive.webp" />
+      </div>
+    </div>
 
-      <section class="intro-art">
-        <div class="container-h1-title">
-          <h1>Independent <span class="designer-art">Designer</span></h1>
-          <div class="container-impact webm-responsive" id="impact-video">
-            <img
-              src="./assets/impact-svg/impact-svg-1.svg"
-              class="impact-frame"
-              style="display: block"
-            />
-            <img
-              src="./assets/impact-svg/impact-svg-2.svg"
-              class="impact-frame"
-              style="display: none"
-            />
-            <img
-              src="./assets/impact-svg/impact-svg-3.svg"
-              class="impact-frame"
-              style="display: none"
-            />
-            <img
-              src="./assets/impact-svg/impact-svg-4.svg"
-              class="impact-frame"
-              style="display: none"
-            />
-            <img
-              src="./assets/impact-svg/impact-svg-5.svg"
-              class="impact-frame"
-              style="display: none"
-            />
-            <img
-              src="./assets/impact-svg/impact-svg-6.svg"
-              class="impact-frame"
-              style="display: none"
-            />
-          </div>
-        </div>
+    <section class="featured-projects-art">
+      <div class="container-featured">
 
-        <div class="container-h2-title">
+        <div class="container-featured-title">
+
           <h2>
-            for
-            <span class="creative-art">creative</span>
-            <span class="brand-art">brands</span>
+            WORKS
           </h2>
-          <div id="signal-video" class="container-signal webm-responsive">
-            <img
-              src="./assets/exclamation-svg/exclamation-svg-1.svg"
-              class="impact-frame exclamation-icon-art"
-              style="display: block"
-            />
-            <img
-              src="./assets/exclamation-svg/exclamation-svg-2.svg"
-              class="impact-frame exclamation-icon-art"
-              style="display: none"
-            />
-            <img
-              src="./assets/exclamation-svg/exclamation-svg-3.svg"
-              class="impact-frame exclamation-icon-art"
-              style="display: none"
-            />
-            <img
-              src="./assets/exclamation-svg/exclamation-svg-4.svg"
-              class="impact-frame exclamation-icon-art"
-              style="display: none"
-            />
+          <div id="featured-video" class="container-featured-text webm-responsive">
+            <img src="./assets/featured-svg/featured-svg-1.svg" class="impact-frame featured-animation-art"
+              style="display: block" />
+            <img src="./assets/featured-svg/featured-svg-2.svg" class="impact-frame featured-animation-art"
+              style="display: none" />
+            <img src="./assets/featured-svg/featured-svg-3.svg" class="impact-frame featured-animation-art"
+              style="display: none" />
+            <img src="./assets/featured-svg/featured-svg-4.svg" class="impact-frame featured-animation-art"
+              style="display: none" />
           </div>
-        </div>
-        <div id="original-video" class="container-original webm-responsive">
-          <img
-            src="./assets/original-svg/original-svg-1.svg"
-            class="impact-frame original-animation-art"
-            style="display: block"
-          />
-          <img
-            src="./assets/original-svg/original-svg-2.svg"
-            class="impact-frame original-animation-art"
-            style="display: none"
-          />
-          <img
-            src="./assets/original-svg/original-svg-3.svg"
-            class="impact-frame original-animation-art"
-            style="display: none"
-          />
-          <img
-            src="./assets/original-svg/original-svg-4.svg"
-            class="impact-frame original-animation-art"
-            style="display: none"
-          />
-        </div>
-        <div class="container-intro">
-          <div class="intro-details">
-            <span class="intro-fullname">Soraya Artiel</span>
-            <span class="intro-location">Based in Spain</span>
-          </div>
-          <div class="intro-about-details">
-            <div class="intro-about-details-first">
+          <div class="container-featured-title-p">
+            <p>
+              I take the time to truly understand each project — its goals, its message, and its brand — so every
+              solution is thoughtfully crafted, never templated.
+            </p>
+            <div class="container-featured-title-p-contact">
               <p>
-                For new projects:
-                <a href="mailto:artielsoraya@gmail.com"
-                  >artielsoraya@gmail.com
+                Book discovery call:
+                <a href="mailto:artielsoraya@gmail.com">artielsoraya@gmail.com
                 </a>
               </p>
-              <p>
-                Freelance Web Designer & Developer who combines design, code and
-                artistic sensibility to create precise, carefully crafted and
-                intentional digital experiences. Passionate about art in all its
-                forms and always learning, I collaborate with brands and
-                projects that value detail, aesthetics, and functionality in
-                equal measure.
-              </p>
-            </div>
-
-            <div class="intro-about-details-third">
-              <ul>
-                <li>Web Design</li>
-                <li>Web Development</li>
-                <li>App Design</li>
-                <li>Front-End Development</li>
-              </ul>
             </div>
           </div>
+
         </div>
-      </section>
-      <div class="section-profile-picture">
-        <div class="bg">
-          <img
-            class="index-profile-picture"
-            src="./assets/artiel-soraya-web-developer.webp"
-          />
-          <img
-            class="index-profile-picture-responsive"
-            src="./assets/artiel-soraya-web-designer-responsive.webp"
-          />
+
+
+
+        <div class="container-fan">
+          <div class="container-fan-work work-first" style="z-index: 5;">
+            <span class="fan-work-number">01</span>
+            <h3 class="fan-work-title">Punch</h3>
+            <span class="fan-work-role">Web Design & <br>
+              Development</span>
+            <span class="fan-work-description">Passionate about art in all its forms
+              and always learning, I collaborate with brands and projects that value detail, aesthetics, and
+              functionality in equal measure.</span>
+            <div class="fan-work-img">
+              <video src="./assets/punch-demo.mov" loop muted autoplay></video>
+            </div>
+
+          </div>
+
+          <div class="container-fan-work work-second" style="z-index: 4;">
+            <span class="fan-work-number">02</span>
+            <h3 class="fan-work-title">Reunio</h3>
+            <span class="fan-work-role">Web Design & <br>
+              Development</span>
+            <span class="fan-work-description">Passionate about art in all its forms
+              and always learning, I collaborate with brands and projects that value detail, aesthetics, and
+              functionality in equal measure.</span>
+            <div class="fan-work-img">
+              <img src="./assets/testcard.png" />
+            </div>
+
+          </div>
+
+          <div class="container-fan-work work-third" style="z-index: 3;">
+            <span class="fan-work-number">03</span>
+            <h3 class="fan-work-title">Valor Hunter</h3>
+            <span class="fan-work-role">Web Design </span>
+            <span class="fan-work-description">Passionate about art in all its forms
+              and always learning, I collaborate with brands and projects that value detail, aesthetics, and
+              functionality in equal measure.</span>
+            <div class="fan-work-img">
+              <img src="./assets/testimg2.png" />
+            </div>
+
+          </div>
+
+          <div class="container-fan-work work-four" style="z-index: 2;">
+            <span class="fan-work-number">04</span>
+            <h3 class="fan-work-title">Pluma Pulida</h3>
+            <span class="fan-work-role">Web Design & <br>
+              Development</span>
+            <span class="fan-work-description">Passionate about art in all its forms
+              and always learning, I collaborate with brands and projects that value detail, aesthetics, and
+              functionality in equal measure.</span>
+            <div class="fan-work-img">
+              <img src="./assets/testcard3.png" />
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <!--
+        
+        <div class="container-list-projects">
+
+          <div class="container-list-category">
+            <span>Project</span>
+            <span>Site</span>
+            <span>Role</span>
+            <span>Date</span>
+
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Reunio</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/reunio-project.png" alt="Images of Reunio Project" />
+              </div>
+            </div>
+            <span class="works-role">Web Design & Development</span>
+            <span class="works-type">2025</span>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Helga Platform</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/helga-project.png" alt="Images of Helga Platform Project" />
+              </div>
+            </div>
+            <span class="works-role">Web/Platform Design & Development</span>
+            <span class="works-type">2026</span>
+          </div>
+
+
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Black Horoscope</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/horoscope-project.png" alt="Images of Horoscope Project" />
+              </div>
+            </div>
+            <span class="works-role">App Design & Development</span>
+
+            <span class="works-type">2025</span>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Live Extreme</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/liveextreme-project.png" alt="Images of Live Extreme Project" />
+              </div>
+            </div>
+            <span class="works-role">Web Design & Development</span>
+            <span class="works-type">2023</span>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Nebula Skates</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/nebulaskates-project.png" alt="Images of Nebula skates Project" />
+              </div>
+            </div>
+            <span class="works-role">Web Design & Development</span>
+            <span class="works-type">2025</span>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Valor Hunter</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/valorhunter-project.png" alt="Images of Valor Hunter Project" />
+              </div>
+            </div>
+            <span class="works-role">Web Design</span>
+            <span class="works-type">2024</span>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Beyond Business</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/beyondbusiness-project.png" alt="Images of Beyond Business Project" />
+              </div>
+            </div>
+            <span class="works-role">Web Design & Development</span>
+            <span class="works-type">2025</span>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Foodie Buddy</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/foodiebuddy-project.png" alt="Images of Foodie Buddy Project" />
+              </div>
+            </div>
+            <span class="works-role">App Design</span>
+            <span class="works-type">2024</span>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Portimmo GmbH</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/portimmo-project.png" alt="Images of Portimmo GmbH Project" />
+              </div>
+            </div>
+            <span class="works-role">Web Design & Development</span>
+            <span class="works-type">2026</span>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">CalmWave</h3>
+
+            <div class="works-image">
+              <div class="works-image-container">
+                <img src="./assets/calmwave-project.png" alt="Images of CalmWave Project" />
+              </div>
+            </div>
+            <span class="works-role">App Design</span>
+            <span class="works-type">2024</span>
+          </div>
+        </div>
+        -->
+
+
+
+        <!--
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Black Horoscope</h3>
+            <span class="works-role">App Design & Development</span>
+
+            <div class="works-image">
+              <div class="works-image-container"> <img src="./assets/project-horoscope-01.jpg"
+                  alt="Images of horoscope Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-horoscope-02.jpg" alt="Images of horoscope Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-horoscope-03.jpg" alt="Images of horoscope Project" />
+              </div>
+
+            </div>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Live Extreme</h3>
+            <span class="works-role">Web Design & Development</span>
+
+            <div class="works-image">
+              <div class="works-image-container"> <img src="./assets/project-liveextreme-01.jpg"
+                  alt="Images of liveextreme Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-liveextreme-02.jpg" alt="Images of liveextreme Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-liveextreme-03.jpg" alt="Images of liveextreme Project" />
+              </div>
+
+            </div>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Nebula Skates</h3>
+            <span class="works-role">Web Design & Development</span>
+
+            <div class="works-image">
+              <div class="works-image-container"> <img src="./assets/project-nebulaskates-01.jpg"
+                  alt="Images of nebulaskates Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-nebulaskates-02.jpg" alt="Images of nebulaskates Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-nebulaskates-03.jpg" alt="Images of nebulaskates Project" />
+              </div>
+
+            </div>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Valor Hunter</h3>
+            <span class="works-role">Web Design</span>
+
+            <div class="works-image">
+              <div class="works-image-container"> <img src="./assets/project-valorhunter-01.jpg"
+                  alt="Images of valorhunter Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-valorhunter-02.jpg" alt="Images of valorhunter Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-valorhunter-03.jpg" alt="Images of valorhunter Project" />
+              </div>
+
+            </div>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Beyond Business</h3>
+            <span class="works-role">Web Design & Development</span>
+
+            <div class="works-image">
+              <div class="works-image-container"> <img src="./assets/project-bb-01.jpg" alt="Images of bb Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-bb-02.jpg" alt="Images of bb Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-bb-03.jpg" alt="Images of bb Project" />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">Foodie Buddy</h3>
+            <span class="works-role">App Design</span>
+
+            <div class="works-image">
+              <div class="works-image-container"> <img src="./assets/project-foodiebuddy-01.jpg"
+                  alt="Images of foodiebuddy Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-foodiebuddy-02.jpg" alt="Images of foodiebuddy Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-foodiebuddy-03.jpg" alt="Images of foodiebuddy Project" />
+              </div>
+
+            </div>
+          </div>
+
+          <div class="works-list-item">
+            <div class="works-bg-wrapper">
+              <div class="works-list-bg"></div>
+            </div>
+
+            <h3 class="works-title">CalmWave</h3>
+            <span class="works-role">App Design</span>
+
+            <div class="works-image">
+              <div class="works-image-container"> <img src="./assets/project-calmwave-01.jpg"
+                  alt="Images of calmwave Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-calmwave-02.jpg" alt="Images of calmwave Project" />
+              </div>
+              <div class="works-image-container">
+                <img src="./assets/project-calmwave-03.jpg" alt="Images of calmwave Project" />
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
+-->
 
-      <section class="featured-projects-art">
-        <div class="container-featured">
-          <span>Featured</span>
-          <h2>
-            Projects
-            <video
-              src="./assets/4-art.webm"
-              loop
-              muted
-              autoplay
-              preload="metadata"
-              class=""
-              style="width: 4vw"
-            ></video>
-          </h2>
-        </div>
-      </section>
 
-      <section class="profile-art">
+
+        <!--
+        <section class="featured-playground-art">
+          <div class="container-playground">
+
+            <h2>
+              PLAYGROUND
+            </h2>
+
+            <div class="featured-playground-full-list">
+
+              <div class="featured-playground-item-list">
+                <video src="./assets/boxing-website.mp4" autoplay loop muted></video>
+              </div>
+
+
+              <div class="featured-playground-item-list">
+                <video src="./assets/concept-01.mp4" autoplay loop muted></video>
+              </div>
+
+
+              <div class="featured-playground-item-list">
+                <video src="./assets/vespidae.mp4" autoplay loop muted></video>
+              </div>
+
+
+
+            </div>
+
+
+        </section>
+
+        -->
+    </section>
+
+
+
+    <section class="profile-art">
+      <div class="container-profile-art">
         <div class="container-profile-art">
-          <div class="container-profile-art">
-            <img class="profile-letter" src="./assets/profile-icon.svg" />
-          </div>
-          <h2>
-            CREATIVE WEB<br />
-            DESIGNER
-          </h2>
-          <div class="container-need-art">
-            <img class="need-letter" src="./assets/need-icon.svg" />
-          </div>
+          <img class="profile-letter" src="./assets/profile-icon.svg" />
         </div>
-        <div class="container-profile-info-art">
-          <div class="container-profile-info-first">
+        <h2>
+          CREATIVE WEB<br />
+          DESIGNER
+        </h2>
+        <div class="container-need-art">
+          <img class="need-letter" src="./assets/need-icon.svg" />
+        </div>
+      </div>
+      <div class="container-profile-info-art">
+        <div class="container-profile-info-first">
+          <p>
+            My areas of interest for work are arts, culture, lifestyle, games,
+            events, sports, and fashion.
+          </p>
+        </div>
+        <div class="container-profile-picture-art">
+          <img src="./assets/artiel-soraya-profile-designer.webp" />
+        </div>
+        <div class="container-profile-info-last">
+          <div class="subcontainer-profile-info-last">
             <p>
-              My areas of interest for work are arts, culture, lifestyle, games,
-              events, sports, and fashion.
+              My areas of interest for work are arts, culture, lifestyle,
+              games, events, sports, and fashion.
             </p>
           </div>
-          <div class="container-profile-picture-art">
-            <img src="./assets/artiel-soraya-profile-designer.webp" />
-          </div>
-          <div class="container-profile-info-last">
-            <div class="subcontainer-profile-info-last">
-              <p>
-                My areas of interest for work are arts, culture, lifestyle,
-                games, events, sports, and fashion.
-              </p>
-            </div>
-            <div class="subcontainer-profile-info-last">
-              <p>
-                Based in Spain <br />
-                Working remotely
-              </p>
-            </div>
+          <div class="subcontainer-profile-info-last">
+            <p>
+              Based in Spain <br />
+              Working remotely
+            </p>
           </div>
         </div>
-      </section>
-      <div class="profile-art-responsive">
-        <img src="./assets/artiel-soraya-profile-designer.webp"/>
       </div>
-    </main>
+    </section>
+    <div class="profile-art-responsive">
+      <img src="./assets/artiel-soraya-profile-designer.webp" />
+    </div>
+  </main>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const lenis = new Lenis({
-          autoRaf: true,
-        });
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lenis = new Lenis({
+        autoRaf: true,
       });
-    </script>
+    });
+  </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // --- CONFIGURACIÓN DE CADA ANIMACIÓN ---
-        const videosConfig = [
-          {
-            containerId: "impact-video", // Contenedor #impact-video
-            frameClass: "impact-frame", // Clase común de los frames SVG
-            frameDuration: 100, // Duración de cada frame en ms
-          },
-          {
-            containerId: "signal-video", // Contenedor #signal-video
-            frameClass: "impact-frame", // Aunque tengan otras clases, solo busca "impact-frame"
-            frameDuration: 120,
-          },
-          {
-            containerId: "original-video", // Contenedor #original-video
-            frameClass: "impact-frame",
-            frameDuration: 120,
-          },
-        ];
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // --- CONFIGURACIÓN DE CADA ANIMACIÓN ---
+      const videosConfig = [
+        {
+          containerId: "impact-video", // Contenedor #impact-video
+          frameClass: "impact-frame", // Clase común de los frames SVG
+          frameDuration: 100, // Duración de cada frame en ms
+        },
+        {
+          containerId: "signal-video", // Contenedor #signal-video
+          frameClass: "impact-frame", // Aunque tengan otras clases, solo busca "impact-frame"
+          frameDuration: 120,
+        },
+        {
+          containerId: "original-video", // Contenedor #original-video
+          frameClass: "impact-frame",
+          frameDuration: 120,
+        },
+        {
+          containerId: "featured-video", // Contenedor #featured-video
+          frameClass: "impact-frame",
+          frameDuration: 120,
+        },
+      ];
 
-        // --- FUNCIONES AUXILIARES ---
-        // Verifica si un elemento está visible en pantalla
-        function isVisible(el) {
-          const rect = el.getBoundingClientRect();
-          return rect.top < window.innerHeight && rect.bottom > 0;
-        }
+      // --- FUNCIONES AUXILIARES ---
+      // Verifica si un elemento está visible en pantalla
+      function isVisible(el) {
+        const rect = el.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      }
 
-        // Reproduce los frames de un contenedor
-        function animateFrames(container, frames, frameDuration) {
-          let index = 0;
-          setInterval(() => {
-            if (!isVisible(container)) return; // Pausa si no está visible
-            frames.forEach(
-              (f, i) => (f.style.display = i === index ? "block" : "none")
-            );
-            index = (index + 1) % frames.length;
-          }, frameDuration);
-        }
+      // Reproduce los frames de un contenedor
+      function animateFrames(container, frames, frameDuration) {
+        let index = 0;
+        setInterval(() => {
+          if (!isVisible(container)) return; // Pausa si no está visible
+          frames.forEach(
+            (f, i) => (f.style.display = i === index ? "block" : "none")
+          );
+          index = (index + 1) % frames.length;
+        }, frameDuration);
+      }
 
-        // --- INICIALIZAR ANIMACIONES ---
-        videosConfig.forEach((config) => {
-          const container = document.getElementById(config.containerId);
-          if (!container) return;
+      // --- INICIALIZAR ANIMACIONES ---
+      videosConfig.forEach((config) => {
+        const container = document.getElementById(config.containerId);
+        if (!container) return;
 
-          const frames = container.querySelectorAll(`.${config.frameClass}`);
-          if (!frames.length) return;
+        const frames = container.querySelectorAll(`.${config.frameClass}`);
+        if (!frames.length) return;
 
-          animateFrames(container, frames, config.frameDuration);
-        });
+        animateFrames(container, frames, config.frameDuration);
       });
-    </script>
+    });
+  </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const span = document.getElementById("loading-artielstudio");
-        const splash = document.getElementById("splash-artielstudio");
-        const main = document.querySelector("main");
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const span = document.getElementById("loading-artielstudio");
+      const splash = document.getElementById("splash-artielstudio");
+      const main = document.querySelector("main");
 
-        if (!span || !splash || !main) return;
+      if (!span || !splash || !main) return;
 
-        document.body.classList.add("splash-active");
+      document.body.classList.add("splash-active");
 
-        const pauses = [0, 6, 91, 100];
-        let percent = 0;
-        let paused = false;
+      const pauses = [0, 6, 91, 100];
+      let percent = 0;
+      let paused = false;
 
-        const interval = setInterval(() => {
-          if (paused) return;
+      const interval = setInterval(() => {
+        if (paused) return;
 
-          span.textContent = percent + "%";
+        span.textContent = percent + "%";
 
-          if (pauses.includes(percent)) {
-            paused = true;
-            setTimeout(() => {
-              paused = false;
+        if (pauses.includes(percent)) {
+          paused = true;
+          setTimeout(() => {
+            paused = false;
 
-              if (percent === 100) {
+            if (percent === 100) {
+              setTimeout(() => {
+                splash.style.opacity = "0";
+                splash.style.visibility = "hidden";
+
                 setTimeout(() => {
-                  splash.style.opacity = "0";
-                  splash.style.visibility = "hidden";
-
-                  setTimeout(() => {
-                    document.body.classList.remove("splash-active");
-                    splash.remove();
-                  }, 300);
-                }, 500);
-              }
-            }, 600);
-          }
-
-          if (percent < 100) {
-            percent++;
-          } else {
-            clearInterval(interval);
-          }
-        }, 30);
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        gsap.registerPlugin(ScrollTrigger);
-
-        const mm = gsap.matchMedia();
-
-        mm.add(
-          {
-            isDesktop: "(min-width: 1024px)",
-            isTablet: "(max-width: 1023px) and (min-width: 500px)",
-            isMobile: "(max-width: 500px)",
-          },
-          (context) => {
-            const { isDesktop, isTablet, isMobile } = context.conditions;
-
-            // Define el desplazamiento según el tamaño
-            let yStart = "-20%";
-            let yEnd = "18%";
-
-            if (isTablet) {
-              yStart = "-25%";
-              yEnd = "10%";
-            } else if (isMobile) {
-              yStart = "-20%";
-              yEnd = "10%";
+                  document.body.classList.remove("splash-active");
+                  splash.remove();
+                }, 300);
+              }, 500);
             }
+          }, 600);
+        }
 
-            // Animación
-            gsap.utils
-              .toArray(".section-profile-picture")
-              .forEach((section) => {
-                const image = section.querySelector(".index-profile-picture");
-                if (!image) return;
+        if (percent < 100) {
+          percent++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 30);
+    });
+  </script>
 
-                gsap.fromTo(
-                  image,
-                  { y: yStart },
-                  {
-                    y: yEnd,
-                    ease: "none",
-                    scrollTrigger: {
-                      trigger: section,
-                      start: "top bottom",
-                      end: "bottom top",
-                      scrub: true,
-                    },
-                  }
-                );
-              });
-          }
-        );
+  <script>
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const cards = gsap.utils.toArray(".container-fan-work");
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".container-fan",
+          start: "top 100%",
+          end: "bottom 80%",
+          scrub: 0.5,
+        }
       });
-    </script>
-  </body>
+
+
+      cards.forEach((card, index) => {
+        if (index === 0) return;
+
+        let startRot = 0, startX = 0, startY = 0;
+        let varName = "";
+        let startColor = "";
+
+        // 1. Mapeamos los valores iniciales y el nombre de la variable de tu CSS
+        if (index === 1) {
+          startRot = -3; startX = -10; startY = -20;
+          varName = "--bg-color-top-second";
+          startColor = "#e6e6e6";
+        }
+        if (index === 2) {
+          startRot = -4; startX = -20; startY = -160;
+          varName = "--bg-color-top-third";
+          startColor = "rgb(207, 207, 207)";
+        }
+        if (index === 3) {
+          startRot = -5; startX = -30; startY = -300;
+          varName = "--bg-color-top-four";
+          startColor = "rgb(188, 188, 188)";
+        }
+
+        // 2. Creamos los objetos de GSAP usando los nombres de tus variables
+        const fromProps = {
+          rotate: startRot,
+          x: startX,
+          y: startY
+        };
+        fromProps[varName] = startColor; // Asigna el color de inicio a la variable correcta
+
+        const toProps = {
+          rotate: 0,
+          x: 0,
+          y: 0,
+          ease: "power1.inOut"
+        };
+        toProps[varName] = "#F3F3F3"; // Todas terminan en el color que pediste
+
+        // 3. Ejecutamos la animación
+        tl.fromTo(card, fromProps, toProps, 0);
+      });
+
+    });
+
+
+  </script>
+
+
+
+
+
+
+
+  <!--
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".works-list-item").forEach(item => {
+        const bg = item.querySelector(".works-list-bg");
+
+        item.addEventListener("mouseenter", e => {
+          const rect = item.getBoundingClientRect();
+          const fromTop = e.clientY - rect.top < rect.height / 2;
+
+          gsap.fromTo(
+            bg,
+            { y: fromTop ? "-101%" : "101%" },
+            { y: "0%", duration: 0.25, ease: "power2.out" }
+          );
+        });
+
+        item.addEventListener("mouseleave", e => {
+          const rect = item.getBoundingClientRect();
+          const toTop = e.clientY - rect.top < rect.height / 2;
+
+          gsap.to(bg, {
+            y: toTop ? "-101%" : "101%",
+            duration: 0.25,
+            ease: "power2.in"
+          });
+        });
+      });
+
+    });
+  </script>
+  -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const mm = gsap.matchMedia();
+
+      mm.add(
+        {
+          isDesktop: "(min-width: 1024px)",
+          isTablet: "(max-width: 1023px) and (min-width: 500px)",
+          isMobile: "(max-width: 500px)",
+        },
+        (context) => {
+          const { isDesktop, isTablet, isMobile } = context.conditions;
+
+          // Define el desplazamiento según el tamaño
+          let yStart = "-20%";
+          let yEnd = "18%";
+
+          if (isTablet) {
+            yStart = "-25%";
+            yEnd = "10%";
+          } else if (isMobile) {
+            yStart = "-20%";
+            yEnd = "10%";
+          }
+
+          // Animación
+          gsap.utils
+            .toArray(".section-profile-picture")
+            .forEach((section) => {
+              const image = section.querySelector(".index-profile-picture");
+              if (!image) return;
+
+              gsap.fromTo(
+                image,
+                { y: yStart },
+                {
+                  y: yEnd,
+                  ease: "none",
+                  scrollTrigger: {
+                    trigger: section,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true,
+                  },
+                }
+              );
+            });
+        }
+      );
+    });
+  </script>
+
+  <script>
+    let resizeTimeout;
+
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimeout);
+
+      resizeTimeout = setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 200); // debounce
+    });
+  </script>
+</body>
+
 </html>
