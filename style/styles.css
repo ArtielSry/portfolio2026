@@ -9,7 +9,7 @@ body {
   background-color: #f3f3f3;
   width: 100vw;
   height: 100vh;
-  cursor: url("../assets/cursor-art.png"), auto;
+  cursor: url("../assets/public/cursor-artielstudio.svg"), auto;
 }
 
 body.splash-active {
@@ -22,7 +22,7 @@ a {
 
 @font-face {
   font-family: "Outfit";
-  src: url("../assets/fonts/Outfit-ExtraBold.woff2") format("woff2");
+  src: url("../assets/Outfit/Outfit-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -30,12 +30,12 @@ a {
 
 @font-face {
   font-family: DentonCondensed;
-  src: url(../assets/DentonCondensedTest-Regular.otf);
+  src: url(../assets/alternative-font/DentonCondensedTest-Regular.otf);
 }
 
 @font-face {
   font-family: InstrumentalSerif;
-  src: url(../assets/InstrumentSerif-Italic.ttf);
+  src: url(../assets/alternative-font/InstrumentSerif-Italic.ttf);
 }
 
 @font-face {
@@ -185,10 +185,12 @@ body.splash-active {
   font-weight: 800;
   margin-left: -6px;
   display: inline;
+  color: #181717;
 }
 .intro-art h2 {
   font-family: Outfit;
   font-size: 6.5vw;
+  color: #181717;
 
   font-weight: 800;
   line-height: 100%;
@@ -231,7 +233,7 @@ body.splash-active {
 .intro-about-details a {
   color: #181717;
   text-decoration: none;
-  background-image: url(../assets/btn-artiel-studio.svg);
+  background-image: url(../assets/public/btn-artiel-studio.svg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 10px;
@@ -407,7 +409,7 @@ body.splash-active {
 .container-featured-title-p-contact a {
   color: #181717;
   text-decoration: none;
-  background-image: url(../assets/btn-artiel-studio.svg);
+  background-image: url(../assets/public/btn-artiel-studio.svg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 10px;
@@ -535,7 +537,7 @@ body.splash-active {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
-  margin-bottom: 20rem; /* Espacio extra para que se vea el abanico al final */
+  margin-bottom: 10rem; /* Espacio extra para que se vea el abanico al final */
   overflow: visible;
   position: relative;
   align-items: center;
@@ -548,7 +550,7 @@ body.splash-active {
   height: 300px;
   width: 100%;
   display: grid;
-  grid-template-columns: 0.5fr 1.75fr 1fr 2fr 2.5fr;
+  grid-template-columns: 2.5fr 1fr 2fr 2.5fr;
 
   position: relative;
   top: 0;
@@ -596,6 +598,7 @@ body.splash-active {
 }
 
 .container-fan-work {
+  width: 100%;
   top: 0;
   will-change:
     transform, --bg-color-top-second, --bg-color-top-third, --bg-color-top-four;
@@ -613,7 +616,7 @@ body.splash-active {
   font-family: DentonCondensed;
   font-size: 4vw;
   font-weight: 300;
-  padding: 2rem 1rem;
+  padding: 2rem;
   color: #181717;
 }
 
@@ -643,7 +646,6 @@ body.splash-active {
   border-radius: 2px;
   width: 100%;
 
-  background-color: rgb(255, 255, 255);
 
   padding: 1rem;
   margin: 1rem;
@@ -651,12 +653,13 @@ body.splash-active {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .fan-work-img video {
   width: 90%;
   height: auto;
+  border-radius: 2px;
   object-fit: cover;
 }
 
@@ -1205,5 +1208,9 @@ body.splash-active {
 
   .fan-work-img {
     padding: 0rem;
+    justify-content: center;
   }
+.fan-work-img video {
+    width: 100%;
+}
 }

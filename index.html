@@ -1,60 +1,54 @@
 <!DOCTYPE html>
+<!-- Soraya Artiel - Web designer & developer -->
 <html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Título de la página (aparece en Google y pestañas del navegador) -->
   <title>Artiel Studio | Web Design & Development</title>
-
-  <!-- Meta descripción (importante para SEO y aparece en resultados de Google) -->
   <meta name="description"
-    content="Bienvenido a mi sitio web. Aquí encontrarás información sobre mis servicios, proyectos y cómo contactarme. ¡Visítanos ahora!" />
-
-  <!-- Palabras clave (ya no son tan importantes, pero no hacen daño) -->
-  <meta name="keywords" content="sitio web, portfolio, servicios, desarrollo web, diseño, contacto" />
-
-  <!-- Autor del sitio -->
-  <meta name="author" content="Tu Nombre o Marca" />
-
-  <!-- Robots (permite a Google indexar la página) -->
+    content="Independet designer for creative brands. Book a discovery call for your next project!" />
+  <meta name="keywords" content="web design, creative developer, web development, webflow, web animation" />
+  <meta name="author" content="Soraya Artiel" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph para compartir en redes sociales -->
-  <meta property="og:title" content="Mi Sitio Web Profesional" />
+
+  <meta property="og:title" content="Independent Web Designer | Soraya Artiel" />
   <meta property="og:description"
-    content="Descubre mis proyectos y servicios. Desarrollo web profesional a tu alcance." />
-  <meta property="og:image" content="https://tudominio.com/imagen.jpg" />
+    content="Digital experiences for modern brands. Spain-based, remote work. Interactive websites. © Artiel Studio" />
+  <meta property="og:image" content="https://tudominio.com/assets/og-image.png" />
   <meta property="og:url" content="https://tudominio.com" />
   <meta property="og:type" content="website" />
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/favicon-art.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/public/favicon-art.svg" type="image/svg+xml" />
 
-  <!--  external -->
+  <!--  External -->
   <script defer src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
   <script defer src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <script defer src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
-  <!-- Enlace al CSS -->
+
+  <!-- CSS -->
   <link rel="stylesheet" href="./normalize.css" />
   <link rel="stylesheet" href="style/styles.css" />
+
 </head>
 
 <body>
+  <!-- Splash -->
   <section id="splash-artielstudio">
     <div class="splash-container-artielstudio">
       <div class="splash-column-container-artielstudio">
         <div class="splash-subcontainer-artielstudio">
           <div class="icon-artiel">
-            <img src="./assets/artiel.svg" alt="artiel name" />
+            <img src="./assets/public/artiel.svg" alt="artiel name" />
           </div>
           <div class="container-artielstudio-logo-splash-video">
-            <video src="./assets/artielstudio-animation.webm" loop muted autoplay preload="metadata"
+            <video src="./assets/public/artielstudio-animation.webm" loop muted autoplay preload="metadata"
               class="artielstudio-logo-splash-video"></video>
           </div>
           <div class="icon-studio">
-            <img src="./assets/studio.svg" alt="studio name" />
+            <img src="./assets/public/studio.svg" alt="studio name" />
           </div>
         </div>
         <div class="splash-loading-artielstudio">
@@ -63,11 +57,15 @@
       </div>
     </div>
   </section>
+
+  <!-- Main -->
   <main class="main-art">
     <header class="header-art">
-      <img src="./assets/artiel-studio.svg" alt="astirl.studio logo written" />
+      <img src="./assets/public/artiel-studio.svg" alt="artiel.studio logo is just the same name" />
     </header>
 
+
+    <!-- Intro -->
     <section class="intro-art">
       <div class="container-h1-title">
         <h1>Independent <span class="designer-art">Designer</span></h1>
@@ -141,18 +139,19 @@
         </div>
       </div>
     </section>
+
+    <!-- Profile picture -->
     <div class="section-profile-picture">
       <div class="bg">
-        <img class="index-profile-picture" src="./assets/testpic.png" />
-        <img class="index-profile-picture-responsive" src="./assets/artiel-soraya-web-designer-responsive.webp" />
+        <img class="index-profile-picture" src="./assets/public/artiel-pic-profile.png" />
+        <img class="index-profile-picture-responsive" src="./assets/public/artiel-soraya-web-designer-responsive.webp" />
       </div>
     </div>
 
+    <!-- Featured projects 
     <section class="featured-projects-art">
       <div class="container-featured">
-
         <div class="container-featured-title">
-
           <h2>
             WORKS
           </h2>
@@ -180,13 +179,12 @@
             </div>
           </div>
 
-        </div>
+        </div> 
 
-
-
+         Fan Effect Projects
         <div class="container-fan">
           <div class="container-fan-work work-first" style="z-index: 5;">
-            <span class="fan-work-number">01</span>
+
             <h3 class="fan-work-title">Punch</h3>
             <span class="fan-work-role">Web Design & <br>
               Development</span>
@@ -194,13 +192,12 @@
               and always learning, I collaborate with brands and projects that value detail, aesthetics, and
               functionality in equal measure.</span>
             <div class="fan-work-img">
-              <video src="./assets/punch-demo.mov" loop muted autoplay></video>
+              <video src="./assets/projects-img/punch-demo.mov" loop muted autoplay></video>
             </div>
 
           </div>
 
           <div class="container-fan-work work-second" style="z-index: 4;">
-            <span class="fan-work-number">02</span>
             <h3 class="fan-work-title">Reunio</h3>
             <span class="fan-work-role">Web Design & <br>
               Development</span>
@@ -208,26 +205,24 @@
               and always learning, I collaborate with brands and projects that value detail, aesthetics, and
               functionality in equal measure.</span>
             <div class="fan-work-img">
-              <img src="./assets/testcard.png" />
+              <video src="./assets/test2.mov" loop muted autoplay></video>
             </div>
 
           </div>
 
           <div class="container-fan-work work-third" style="z-index: 3;">
-            <span class="fan-work-number">03</span>
             <h3 class="fan-work-title">Valor Hunter</h3>
             <span class="fan-work-role">Web Design </span>
             <span class="fan-work-description">Passionate about art in all its forms
               and always learning, I collaborate with brands and projects that value detail, aesthetics, and
               functionality in equal measure.</span>
             <div class="fan-work-img">
-              <img src="./assets/testimg2.png" />
+              <video src="./assets/projects-img/punch-demo.mov" loop muted autoplay></video>
             </div>
 
           </div>
 
-          <div class="container-fan-work work-four" style="z-index: 2;">
-            <span class="fan-work-number">04</span>
+          <div class="container-fan-work work-four" style="z-index: 2; border-bottom: none !important;">
             <h3 class="fan-work-title">Pluma Pulida</h3>
             <span class="fan-work-role">Web Design & <br>
               Development</span>
@@ -235,391 +230,18 @@
               and always learning, I collaborate with brands and projects that value detail, aesthetics, and
               functionality in equal measure.</span>
             <div class="fan-work-img">
-              <img src="./assets/testcard3.png" />
+              <img src="./assets/projects-img/pluma-pulida.png" />
             </div>
 
           </div>
         </div>
-
-
-
-
-        <!--
-        
-        <div class="container-list-projects">
-
-          <div class="container-list-category">
-            <span>Project</span>
-            <span>Site</span>
-            <span>Role</span>
-            <span>Date</span>
-
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Reunio</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/reunio-project.png" alt="Images of Reunio Project" />
-              </div>
-            </div>
-            <span class="works-role">Web Design & Development</span>
-            <span class="works-type">2025</span>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Helga Platform</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/helga-project.png" alt="Images of Helga Platform Project" />
-              </div>
-            </div>
-            <span class="works-role">Web/Platform Design & Development</span>
-            <span class="works-type">2026</span>
-          </div>
-
-
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Black Horoscope</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/horoscope-project.png" alt="Images of Horoscope Project" />
-              </div>
-            </div>
-            <span class="works-role">App Design & Development</span>
-
-            <span class="works-type">2025</span>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Live Extreme</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/liveextreme-project.png" alt="Images of Live Extreme Project" />
-              </div>
-            </div>
-            <span class="works-role">Web Design & Development</span>
-            <span class="works-type">2023</span>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Nebula Skates</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/nebulaskates-project.png" alt="Images of Nebula skates Project" />
-              </div>
-            </div>
-            <span class="works-role">Web Design & Development</span>
-            <span class="works-type">2025</span>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Valor Hunter</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/valorhunter-project.png" alt="Images of Valor Hunter Project" />
-              </div>
-            </div>
-            <span class="works-role">Web Design</span>
-            <span class="works-type">2024</span>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Beyond Business</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/beyondbusiness-project.png" alt="Images of Beyond Business Project" />
-              </div>
-            </div>
-            <span class="works-role">Web Design & Development</span>
-            <span class="works-type">2025</span>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Foodie Buddy</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/foodiebuddy-project.png" alt="Images of Foodie Buddy Project" />
-              </div>
-            </div>
-            <span class="works-role">App Design</span>
-            <span class="works-type">2024</span>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Portimmo GmbH</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/portimmo-project.png" alt="Images of Portimmo GmbH Project" />
-              </div>
-            </div>
-            <span class="works-role">Web Design & Development</span>
-            <span class="works-type">2026</span>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">CalmWave</h3>
-
-            <div class="works-image">
-              <div class="works-image-container">
-                <img src="./assets/calmwave-project.png" alt="Images of CalmWave Project" />
-              </div>
-            </div>
-            <span class="works-role">App Design</span>
-            <span class="works-type">2024</span>
-          </div>
-        </div>
-        -->
-
-
-
-        <!--
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Black Horoscope</h3>
-            <span class="works-role">App Design & Development</span>
-
-            <div class="works-image">
-              <div class="works-image-container"> <img src="./assets/project-horoscope-01.jpg"
-                  alt="Images of horoscope Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-horoscope-02.jpg" alt="Images of horoscope Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-horoscope-03.jpg" alt="Images of horoscope Project" />
-              </div>
-
-            </div>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Live Extreme</h3>
-            <span class="works-role">Web Design & Development</span>
-
-            <div class="works-image">
-              <div class="works-image-container"> <img src="./assets/project-liveextreme-01.jpg"
-                  alt="Images of liveextreme Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-liveextreme-02.jpg" alt="Images of liveextreme Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-liveextreme-03.jpg" alt="Images of liveextreme Project" />
-              </div>
-
-            </div>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Nebula Skates</h3>
-            <span class="works-role">Web Design & Development</span>
-
-            <div class="works-image">
-              <div class="works-image-container"> <img src="./assets/project-nebulaskates-01.jpg"
-                  alt="Images of nebulaskates Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-nebulaskates-02.jpg" alt="Images of nebulaskates Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-nebulaskates-03.jpg" alt="Images of nebulaskates Project" />
-              </div>
-
-            </div>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Valor Hunter</h3>
-            <span class="works-role">Web Design</span>
-
-            <div class="works-image">
-              <div class="works-image-container"> <img src="./assets/project-valorhunter-01.jpg"
-                  alt="Images of valorhunter Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-valorhunter-02.jpg" alt="Images of valorhunter Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-valorhunter-03.jpg" alt="Images of valorhunter Project" />
-              </div>
-
-            </div>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Beyond Business</h3>
-            <span class="works-role">Web Design & Development</span>
-
-            <div class="works-image">
-              <div class="works-image-container"> <img src="./assets/project-bb-01.jpg" alt="Images of bb Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-bb-02.jpg" alt="Images of bb Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-bb-03.jpg" alt="Images of bb Project" />
-              </div>
-
-            </div>
-          </div>
-
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">Foodie Buddy</h3>
-            <span class="works-role">App Design</span>
-
-            <div class="works-image">
-              <div class="works-image-container"> <img src="./assets/project-foodiebuddy-01.jpg"
-                  alt="Images of foodiebuddy Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-foodiebuddy-02.jpg" alt="Images of foodiebuddy Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-foodiebuddy-03.jpg" alt="Images of foodiebuddy Project" />
-              </div>
-
-            </div>
-          </div>
-
-          <div class="works-list-item">
-            <div class="works-bg-wrapper">
-              <div class="works-list-bg"></div>
-            </div>
-
-            <h3 class="works-title">CalmWave</h3>
-            <span class="works-role">App Design</span>
-
-            <div class="works-image">
-              <div class="works-image-container"> <img src="./assets/project-calmwave-01.jpg"
-                  alt="Images of calmwave Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-calmwave-02.jpg" alt="Images of calmwave Project" />
-              </div>
-              <div class="works-image-container">
-                <img src="./assets/project-calmwave-03.jpg" alt="Images of calmwave Project" />
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
--->
-
-
-
-        <!--
-        <section class="featured-playground-art">
-          <div class="container-playground">
-
-            <h2>
-              PLAYGROUND
-            </h2>
-
-            <div class="featured-playground-full-list">
-
-              <div class="featured-playground-item-list">
-                <video src="./assets/boxing-website.mp4" autoplay loop muted></video>
-              </div>
-
-
-              <div class="featured-playground-item-list">
-                <video src="./assets/concept-01.mp4" autoplay loop muted></video>
-              </div>
-
-
-              <div class="featured-playground-item-list">
-                <video src="./assets/vespidae.mp4" autoplay loop muted></video>
-              </div>
-
-
-
-            </div>
-
-
-        </section>
-
-        -->
     </section>
 
 
+ -->
 
+
+    <!-- Profile designer
     <section class="profile-art">
       <div class="container-profile-art">
         <div class="container-profile-art">
@@ -662,292 +284,20 @@
     <div class="profile-art-responsive">
       <img src="./assets/artiel-soraya-profile-designer.webp" />
     </div>
+ -->
+
   </main>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const lenis = new Lenis({
-        autoRaf: true,
-      });
-    });
-  </script>
+  <div id="container">
+    <div class='grained'></div>
+    <div class="contents">
+        your contents goes here .. like <a>, <p> etc
+    </div>
+</div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // --- CONFIGURACIÓN DE CADA ANIMACIÓN ---
-      const videosConfig = [
-        {
-          containerId: "impact-video", // Contenedor #impact-video
-          frameClass: "impact-frame", // Clase común de los frames SVG
-          frameDuration: 100, // Duración de cada frame en ms
-        },
-        {
-          containerId: "signal-video", // Contenedor #signal-video
-          frameClass: "impact-frame", // Aunque tengan otras clases, solo busca "impact-frame"
-          frameDuration: 120,
-        },
-        {
-          containerId: "original-video", // Contenedor #original-video
-          frameClass: "impact-frame",
-          frameDuration: 120,
-        },
-        {
-          containerId: "featured-video", // Contenedor #featured-video
-          frameClass: "impact-frame",
-          frameDuration: 120,
-        },
-      ];
+  <!-- Main script -->
+  <script src="./js/logic.js"></script>
 
-      // --- FUNCIONES AUXILIARES ---
-      // Verifica si un elemento está visible en pantalla
-      function isVisible(el) {
-        const rect = el.getBoundingClientRect();
-        return rect.top < window.innerHeight && rect.bottom > 0;
-      }
-
-      // Reproduce los frames de un contenedor
-      function animateFrames(container, frames, frameDuration) {
-        let index = 0;
-        setInterval(() => {
-          if (!isVisible(container)) return; // Pausa si no está visible
-          frames.forEach(
-            (f, i) => (f.style.display = i === index ? "block" : "none")
-          );
-          index = (index + 1) % frames.length;
-        }, frameDuration);
-      }
-
-      // --- INICIALIZAR ANIMACIONES ---
-      videosConfig.forEach((config) => {
-        const container = document.getElementById(config.containerId);
-        if (!container) return;
-
-        const frames = container.querySelectorAll(`.${config.frameClass}`);
-        if (!frames.length) return;
-
-        animateFrames(container, frames, config.frameDuration);
-      });
-    });
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const span = document.getElementById("loading-artielstudio");
-      const splash = document.getElementById("splash-artielstudio");
-      const main = document.querySelector("main");
-
-      if (!span || !splash || !main) return;
-
-      document.body.classList.add("splash-active");
-
-      const pauses = [0, 6, 91, 100];
-      let percent = 0;
-      let paused = false;
-
-      const interval = setInterval(() => {
-        if (paused) return;
-
-        span.textContent = percent + "%";
-
-        if (pauses.includes(percent)) {
-          paused = true;
-          setTimeout(() => {
-            paused = false;
-
-            if (percent === 100) {
-              setTimeout(() => {
-                splash.style.opacity = "0";
-                splash.style.visibility = "hidden";
-
-                setTimeout(() => {
-                  document.body.classList.remove("splash-active");
-                  splash.remove();
-                }, 300);
-              }, 500);
-            }
-          }, 600);
-        }
-
-        if (percent < 100) {
-          percent++;
-        } else {
-          clearInterval(interval);
-        }
-      }, 30);
-    });
-  </script>
-
-  <script>
-
-
-    document.addEventListener("DOMContentLoaded", () => {
-      gsap.registerPlugin(ScrollTrigger);
-
-      const cards = gsap.utils.toArray(".container-fan-work");
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".container-fan",
-          start: "top 100%",
-          end: "bottom 80%",
-          scrub: 0.5,
-        }
-      });
-
-
-      cards.forEach((card, index) => {
-        if (index === 0) return;
-
-        let startRot = 0, startX = 0, startY = 0;
-        let varName = "";
-        let startColor = "";
-
-        // 1. Mapeamos los valores iniciales y el nombre de la variable de tu CSS
-        if (index === 1) {
-          startRot = -3; startX = -10; startY = -20;
-          varName = "--bg-color-top-second";
-          startColor = "#e6e6e6";
-        }
-        if (index === 2) {
-          startRot = -4; startX = -20; startY = -160;
-          varName = "--bg-color-top-third";
-          startColor = "rgb(207, 207, 207)";
-        }
-        if (index === 3) {
-          startRot = -5; startX = -30; startY = -300;
-          varName = "--bg-color-top-four";
-          startColor = "rgb(188, 188, 188)";
-        }
-
-        // 2. Creamos los objetos de GSAP usando los nombres de tus variables
-        const fromProps = {
-          rotate: startRot,
-          x: startX,
-          y: startY
-        };
-        fromProps[varName] = startColor; // Asigna el color de inicio a la variable correcta
-
-        const toProps = {
-          rotate: 0,
-          x: 0,
-          y: 0,
-          ease: "power1.inOut"
-        };
-        toProps[varName] = "#F3F3F3"; // Todas terminan en el color que pediste
-
-        // 3. Ejecutamos la animación
-        tl.fromTo(card, fromProps, toProps, 0);
-      });
-
-    });
-
-
-  </script>
-
-
-
-
-
-
-
-  <!--
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll(".works-list-item").forEach(item => {
-        const bg = item.querySelector(".works-list-bg");
-
-        item.addEventListener("mouseenter", e => {
-          const rect = item.getBoundingClientRect();
-          const fromTop = e.clientY - rect.top < rect.height / 2;
-
-          gsap.fromTo(
-            bg,
-            { y: fromTop ? "-101%" : "101%" },
-            { y: "0%", duration: 0.25, ease: "power2.out" }
-          );
-        });
-
-        item.addEventListener("mouseleave", e => {
-          const rect = item.getBoundingClientRect();
-          const toTop = e.clientY - rect.top < rect.height / 2;
-
-          gsap.to(bg, {
-            y: toTop ? "-101%" : "101%",
-            duration: 0.25,
-            ease: "power2.in"
-          });
-        });
-      });
-
-    });
-  </script>
-  -->
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      gsap.registerPlugin(ScrollTrigger);
-
-      const mm = gsap.matchMedia();
-
-      mm.add(
-        {
-          isDesktop: "(min-width: 1024px)",
-          isTablet: "(max-width: 1023px) and (min-width: 500px)",
-          isMobile: "(max-width: 500px)",
-        },
-        (context) => {
-          const { isDesktop, isTablet, isMobile } = context.conditions;
-
-          // Define el desplazamiento según el tamaño
-          let yStart = "-20%";
-          let yEnd = "18%";
-
-          if (isTablet) {
-            yStart = "-25%";
-            yEnd = "10%";
-          } else if (isMobile) {
-            yStart = "-20%";
-            yEnd = "10%";
-          }
-
-          // Animación
-          gsap.utils
-            .toArray(".section-profile-picture")
-            .forEach((section) => {
-              const image = section.querySelector(".index-profile-picture");
-              if (!image) return;
-
-              gsap.fromTo(
-                image,
-                { y: yStart },
-                {
-                  y: yEnd,
-                  ease: "none",
-                  scrollTrigger: {
-                    trigger: section,
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: true,
-                  },
-                }
-              );
-            });
-        }
-      );
-    });
-  </script>
-
-  <script>
-    let resizeTimeout;
-
-    window.addEventListener("resize", () => {
-      clearTimeout(resizeTimeout);
-
-      resizeTimeout = setTimeout(() => {
-        ScrollTrigger.refresh();
-      }, 200); // debounce
-    });
-  </script>
 </body>
 
 </html>
