@@ -117,6 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
         tl.fromTo(card, fromProps, toProps, 0);
     });
 
+
+
+    
+
     // --- 5. GSAP: PARALLAX PROFILE PICTURE ---
     const mm = gsap.matchMedia();
     mm.add({
