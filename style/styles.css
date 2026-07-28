@@ -237,7 +237,7 @@ body.splash-active {
   background-position: center;
   background-repeat: no-repeat;
   padding: 10px;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .intro-about-details-first {
@@ -537,7 +537,7 @@ body.splash-active {
 .container-fan {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 2rem;
   margin-bottom: 10rem; /* Espacio extra para que se vea el abanico al final */
   overflow: visible;
   position: relative;
@@ -707,6 +707,160 @@ body.splash-active {
 
 .back-container-img:hover img {
   filter: grayscale(0%);
+}
+
+/* project-newversion */
+.project-newversion {
+  display: flex;
+  min-height: 600px;
+  border-top: 0.5px solid #d5cfcf;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* 1. Preparamos el contenedor de la imagen para posicionar el overlay */
+.project-newversion-visual {
+  position: relative;
+  min-width: 60%;
+  max-width: 60%;
+  overflow: hidden;
+}
+
+/* 2. Creamos el overlay oscuro transparente usando ::after */
+.project-newversion-visual-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Negro con 0.5 de opacidad */
+  opacity: 0; /* Oculto por defecto */
+  pointer-events: none; /* Evita que bloquee la interacción o el hover */
+  transition: opacity 0.3s ease; /* Transición suave al aparecer/desaparecer */
+  z-index: 2; /* Se coloca por encima de la imagen */
+}
+
+/* 3. Al hacer hover en el padre (.project-newversion), mostramos el overlay SOLO de ese bloque */
+.project-newversion:hover .project-newversion-visual-bg::after {
+  opacity: 1;
+}
+
+.project-newversion-visual-bg {
+  height: 600px;
+  width: 100%; 
+  border-radius: 2px;
+}
+
+.project-newversion-visual-bg .bg-trigger-visual {
+  height: 140%;
+  object-fit: cover;
+  width: 90%; 
+  margin-top: -20%;
+  border-radius: 2px;
+}
+
+/* --- CONTENEDOR DEL VÍDEO --- */
+.container-bg-video {
+  width: 90%;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 550px; /* Ajustado a 600px para coincidir con la imagen */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  perspective: 1000px;
+  pointer-events: none; /* Evita interferencias de eventos de ratón */
+}
+
+  
+/* --- ESTADO INICIAL DEL VÍDEO (Oculto, desplazado abajo y tumbado/flip) --- */
+.bg-video-trigger-visual {
+  width: 70%;
+  height: auto;
+  position: relative;
+  
+  /* Efecto de entrada */
+  transform: translateY(500px) rotateX(20deg); /* Desplazado y tumbado horizontalmente */
+  transform-origin: center bottom; /* El punto de pivote para el flip es la base */
+      transition: backdrop-filter 0.3s, transform 0.3s cubic-bezier(0.25, 0, 0.25, 1), backdrop-filter 0.3s; /* Transición fluida */
+
+}
+
+.bg-video-trigger-visual-img {
+
+  width: 70%;
+  height:  auto;
+   aspect-ratio: auto;;
+  border-radius: 2px;
+
+  position: relative;
+  
+  /* Efecto de entrada */
+  transform: translateY(900px) rotateX(20deg); /* Desplazado y tumbado horizontalmente */
+  transform-origin: center bottom; /* El punto de pivote para el flip es la base */
+      transition: backdrop-filter 0.3s, transform 0.3s cubic-bezier(0.25, 0, 0.25, 1), backdrop-filter 0.3s; /* Transición fluida */
+
+
+}
+
+/* --- ESTADO AL HACER HOVER EN EL PADRE (.project-newversion) --- */
+.project-newversion:hover .bg-video-trigger-visual {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg); /* Vuelve a posición vertical y original */
+  transition: backdrop-filter 1s, transform 0.5s cubic-bezier(0.25, 0, 0.25, 1), backdrop-filter 0.85s; /* Transición fluida */
+
+}
+
+ .project-newversion:hover .bg-video-trigger-visual-img {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg); /* Vuelve a posición vertical y original */
+  transition: backdrop-filter 1s, transform 0.5s cubic-bezier(0.25, 0, 0.25, 1), backdrop-filter 0.85s; /* Transición fluida */
+
+}
+
+.project-newversion-info h3 {
+    color: #181717;
+    font-family: Outfit;
+    font-size: 1.5vw;
+    min-width: 60%;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.bg-trigger-visual {
+  width: 100%;
+  height: 140%; /* Un 40% más de altura para absorber el rango del -20% al 18% */
+  object-fit: cover;
+  display: block;
+}
+
+.project-newversion-info span {
+
+  font-family: BeVietnam;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  letter-spacing: 0px !important;
+  color: #d0b010;
+}
+
+.project-newversion-info p {
+  font-family: BeVietnam;
+  letter-spacing: -0.4px;
+  line-height: 21px;
+  color: #797c89;
+  width: 350px;
+  font-size: 14px;
+  margin-top: 1rem;
 }
 /* profile */
 
@@ -884,6 +1038,31 @@ body.splash-active {
   }
 }
 
+
+@media (max-width: 1350px) {
+     .project-newversion {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-newversion-visual-bg::after ,
+  .project-newversion-visual-bg .bg-trigger-visual {
+    width: 100%;
+  }
+
+  .project-newversion-visual-bg {
+    height: 760px;
+  }
+
+  .project-newversion-info p {
+    width: 70%;
+  }
+
+  .project-newversion-info h3 {
+    font-size: 2rem;
+  }
+
+}
+
 @media (min-width: 900px) and (max-width: 1600px) {
   .container-h1-title h1,
   .container-h2-title h2 {
@@ -900,6 +1079,18 @@ body.splash-active {
   .container-featured-text {
     top: 15rem;
   }
+
+.project-newversion-info h3 {
+    color: #181717;
+    font-family: Outfit;
+    font-size: 2.5vw;
+    min-width: 60%;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 }
 
 @media (min-width: 1370px) and (max-width: 900px) {
@@ -915,6 +1106,8 @@ body.splash-active {
   .header-art img {
     width: 140px;
   }
+
+ 
 }
 
 @media (max-width: 1600px) {
@@ -951,9 +1144,13 @@ body.splash-active {
     width: 100%;
   }
 
-
 .back-container-img img {
   filter: grayscale(0%) !important; }
+
+.project-newversion-visual {
+  max-width: 100%;
+}
+
 }
 
 @media (min-width: 900px) {
@@ -962,12 +1159,18 @@ body.splash-active {
 
     transform: translateX(-19px) rotate(25deg) translateY(-14px);
   }
+
+ 
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
   .splash-subcontainer-artielstudio {
     width: 80%;
     gap: 1rem;
+  }
+
+   .project-newversion-visual {
+     max-width: 100%;
   }
 
   .section-profile-picture {
@@ -1064,6 +1267,16 @@ body.splash-active {
   .container-featured-text {
     top: 10rem;
   }
+
+
+  .project-newversion-visual-bg {
+        height: 550px;
+    }
+    .container-bg-video {
+      height: 415px;
+      width: 100%;
+    }
+      
 }
 
 @media (max-width: 500px) {
@@ -1279,4 +1492,24 @@ body.splash-active {
 .fan-work-img video {
     width: 100%;
 }
+
+
+    .project-newversion-visual-bg {
+      height: 370px !important;
+    }
+    .container-bg-video {
+      height: 300px;
+      width: 100%;
+    }
+    .bg-video-trigger-visual-img {
+      width: 90%;
+    }
+
+    .project-newversion-info p {
+        width: 97%;
+    }
+    .project-newversion {
+      min-height: 100%;
+    }
+
 }
